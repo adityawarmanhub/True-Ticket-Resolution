@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Canvas: The True-Resolution Workflow</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Font 'Inter' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Load Mermaid.js for flowcharts -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.min.js"></script> --> <!-- Removed Mermaid -->
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for Mermaid diagram */
+        .mermaid {
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="max-w-5xl mx-auto p-6 md:p-12 text-gray-800">
+
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 tracking-tight">
+                Project Canvas: The True-Resolution Workflow
+            </h1>
+            <p class="mt-3 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                A proposal for a low-resource, high-impact system to ensure every closed ticket is a truly solved problem.
+            </p>
+            <p class="mt-4 text-md text-gray-500 font-medium">Proposed by: <span class="text-gray-900">Aditya Warman</span></p>
+        </header>
+
+        <!-- Core Proposal Section -->
+        <section class="my-12">
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-blue-900 mb-2">The Core Proposal</h2>
+                <p class="text-blue-800 text-lg leading-relaxed">
+                    This project re-engineers our ticket-closing process. It shifts our operations from an "agent-centric" model (where we assume a ticket is solved) to a "customer-centric" model (where we ask the customer for confirmation). This is achieved through a simple, low-resource automation, replacing the need for expensive AI intent analysis.
+                </p>
+            </div>
+        </section>
+
+        <!-- Strategic Canvas Section -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+                The Strategic Canvas
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Card 1: False Resolutions -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-red-600 mb-2">Problem: "False Resolutions"</h3>
+                    <p class="mb-4 text-gray-700">We confuse silence with satisfaction. Agents close tickets that aren't truly solved, leading to frustrated customers who give up.</p>
+                    
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Proposed Solution</h3>
+                    <p class="mb-4 text-gray-700">A new ticket status: "Pending (Awaiting Confirmation)". This triggers an automated, interactive email to the customer.</p>
+                    
+                    <h3 class="text-lg font-semibold text-indigo-700 mb-2">Key Success Metric</h3>
+                    <p class="text-gray-700"><strong>1. Confirmed Resolution %:</strong> (Clicks on "Yes") - Our new "North Star" metric.</p>
+                </div>
+
+                <!-- Card 2: Polluted Metrics -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-red-600 mb-2">Problem: Polluted Metrics</h3>
+                    <p class="mb-4 text-gray-700">Our "Ticket Re-open Rate" is useless. It's triggered by "Thank You" replies, which punishes good agents and hides real problems.</p>
+                    
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Proposed Solution</h3>
+                    <p class="mb-4 text-gray-700">The new email provides two clear buttons: [ Yes, it's resolved ] and [ No, I still need help ]. This cleanly separates gratitude from failure.</p>
+                    
+                    <h3 class="text-lg font-semibold text-indigo-700 mb-2">Key Success Metric</h3>
+                    <p class="text-gray-700"><strong>2. True Re-open Rate %:</strong> (Clicks on "No") - This now becomes a 100% accurate and actionable metric for coaching.</p>
+                </div>
+
+                <!-- Card 3: High Customer Effort -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-red-600 mb-2">Problem: High Customer Effort</h3>
+                    <p class="mb-4 text-gray-700">Customers with unsolved problems have to start all over again, creating a new ticket and re-explaining their issue.</p>
+                    
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Proposed Solution</h3>
+                    <p class="mb-4 text-gray-700">The "No" path automatically re-opens the original ticket, adds their new details, and routes it back to the agent for immediate follow-up.</p>
+                    
+                    <h3 class="text-lg font-semibold text-indigo-700 mb-2">Key Success Metric</h3>
+                    <p class="text-gray-700"><strong>3. Customer Effort Score (CES):</strong> (Asked after a "Yes" click) - We expect this to improve significantly.</p>
+                </div>
+
+                <!-- Card 4: Lack of Data -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-red-600 mb-2">Problem: Lack of Data</h3>
+                    <p class="mb-4 text-gray-700">We don't know the real percentage of problems we solve on the first try.</p>
+                    
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Proposed Solution</h3>
+                    <p class="mb-4 text-gray-700">This system provides explicit "Yes," "No," and "Assumed" (no reply) data for every single ticket, giving us a true FCR baseline.</p>
+                    
+                    <h3 class="text-lg font-semibold text-indigo-700 mb-2">Key Success Metric</h3>
+                    <p class="text-gray-700"><strong>4. Assumed Resolution %:</strong> (Tickets that auto-close after 48h) - A metric to watch and minimize.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Workflow Visualization Section -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+                The "True-Resolution" Workflow (Visualized)
+            </h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">This flowchart shows the customer's journey. This entire flow is built using standard helpdesk automation (no AI required).</p>
+            <div class="p-6 md:p-10 bg-white rounded-lg shadow-lg border border-gray-200">
+                <!-- HTML/Tailwind Flowchart -->
+                <div class="space-y-6">
+                    <!-- Start Point -->
+                    <div class="flex justify-center">
+                        <div class="p-4 bg-white border-2 border-gray-300 rounded-lg shadow text-center font-medium">
+                            Agent Proposes Solution
+                        </div>
+                    </div>
+                    <!-- Arrow Down -->
+                    <div class="flex justify-center">
+                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex justify-center">
+                        <div class="p-4 bg-blue-50 border-2 border-blue-300 rounded-lg shadow text-center font-medium text-blue-800">
+                            Agent Sets Status: 'Pending (Awaiting Confirmation)'
+                        </div>
+                    </div>
+                    <!-- Arrow Down -->
+                    <div class="flex justify-center">
+                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex justify-center">
+                        <div class="p-4 bg-blue-50 border-2 border-blue-300 rounded-lg shadow text-center font-medium text-blue-800">
+                            System Sends Auto-Email: 'Did this resolve your issue?'
+                        </div>
+                    </div>
+                    <!-- Arrow Down -->
+                    <div class="flex justify-center">
+                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                    </div>
+                    <!-- Step 4 - Branching Point -->
+                    <div class="flex justify-center">
+                        <div class="p-4 bg-yellow-50 border-2 border-yellow-400 rounded-lg shadow text-center font-medium text-yellow-800">
+                            Customer Receives Email
+                        </div>
+                    </div>
+
+                    <!-- Horizontal Line / Separator -->
+                    <div class="flex justify-center items-center my-8">
+                        <div class="border-t border-gray-300 flex-grow"></div>
+                        <span class="px-4 text-sm text-gray-500 font-medium">Customer Action</span>
+                        <div class="border-t border-gray-300 flex-grow"></div>
+                    </div>
+
+                    <!-- 4 Paths -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        
+                        <!-- Path A -->
+                        <div class="flex flex-col space-y-3 p-4 bg-green-50 rounded-lg border border-green-200">
+                            <h4 class="font-bold text-center text-green-800">Path A: Clicks 'YES'</h4>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">"[ Yes, it's resolved ]"</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Status: 'Closed'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Log: 'Confirmed Resolution: YES'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Send CES Survey</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-gray-800 text-white rounded-lg text-center text-sm font-medium">End</div>
+                        </div>
+
+                        <!-- Path B -->
+                        <div class="flex flex-col space-y-3 p-4 bg-red-50 rounded-lg border border-red-200">
+                            <h4 class="font-bold text-center text-red-800">Path B: Clicks 'NO'</h4>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">"[ No, I still need help ]"</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Show Form: 'Please add details...'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Customer Submits Reply</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Status: 'Open'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Log: 'True Re-open: YES'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Route to Agent (High Priority)</div>
+                            <svg class="w-5 h-5 text-red-600 mx-auto transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                            <div class="p-3 bg-white border-2 border-red-300 rounded-lg text-center text-sm font-medium">Back to "Agent Proposes Solution"</div>
+                        </div>
+
+                        <!-- Path C -->
+                        <div class="flex flex-col space-y-3 p-4 bg-gray-100 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-center text-gray-700">Path C: Does Nothing</h4>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">48h Timeout</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Status: 'Closed'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Log: 'Confirmed Resolution: Assumed'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-gray-800 text-white rounded-lg text-center text-sm font-medium">End</div>
+                        </div>
+                        
+                        <!-- Path D -->
+                        <div class="flex flex-col space-y-3 p-4 bg-gray-100 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-center text-gray-700">Path D: Replies 'Thanks'</h4>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Generic Reply Received</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Reply is Appended to Ticket</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-white border border-gray-300 rounded-lg text-center text-sm">Status remains 'Pending'</div>
+                            <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                            <div class="p-3 bg-gray-400 text-white rounded-lg text-center text-sm font-medium">Waits for 48h Timeout (Path C)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Proposition Section -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+                Value Proposition
+            </h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">This single change provides clear, cascading benefits to the entire organization.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Card 1: The Customer -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4 text-center">The Customer</h3>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li><strong>Empowerment:</strong> Puts them in control of the resolution process.</li>
+                        <li><strong>Clarity:</strong> A simple, binary choice (Yes/No) on how to proceed.</li>
+                        <li><strong>Low Effort:</strong> No need to start a new ticket. One click re-opens their issue.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: The Agent -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4 text-center">The Agent</h3>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li><strong>A Clean Queue:</strong> No more "Thank You" replies re-opening tickets and creating noise.</li>
+                        <li><strong>Clear Feedback:</strong> A clean "True Re-open Rate" is a fair metric for performance.</li>
+                        <li><strong>Higher Morale:</strong> Agents can be confident that their "closed" tickets are actually closed.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: The Business -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4 text-center">The Business</h3>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li><strong>Actionable Data:</strong> For the first time, we can accurately measure resolution and re-open rates.</li>
+                        <li><strong>Targeted Coaching:</strong> Managers can identify exactly which agents or issue types have low resolution rates.</li>
+                        <li><strong>Increased Loyalty:</strong> We fix problems on the first try, reducing customer churn and increasing LTV.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Plan Section -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+                High-Level Implementation Plan
+            </h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">This project is designed to be fast and low-resource.</p>
+            <div class="overflow-x-auto bg-white rounded-lg shadow-lg border border-gray-200">
+                <table class="w-full">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-4 text-left text-sm font-semibold text-gray-600 uppercase tracking-wider">Phase</th>
+                            <th class="p-4 text-left text-sm font-semibold text-gray-600 uppercase tracking-wider">Timeline</th>
+                            <th class="p-4 text-left text-sm font-semibold text-gray-600 uppercase tracking-wider">Key Tasks</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="p-4 align-top font-medium text-gray-900">1. Configuration</td>
+                            <td class="p-4 align-top text-gray-700">1 Week</td>
+                            <td class="p-4 align-top text-gray-700">
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Create new ticket fields (Resolution_Confirmed, etc.).</li>
+                                    <li>Build the "Pending (Awaiting Confirmation)" status.</li>
+                                    <li>Write the 4 automation rules (Send Email, Path A, Path B, Path C).</li>
+                                    <li>Create the CES survey.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top font-medium text-gray-900">2. Internal Testing</td>
+                            <td class="p-4 align-top text-gray-700">1 Week</td>
+                            <td class="p-4 align-top text-gray-700">
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Create test tickets to validate all 4 paths (Yes, No, Timeout, Generic Reply).</li>
+                                    <li>Ensure all custom fields are being populated correctly.</li>
+                                    <li>Fix any automation loop errors.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top font-medium text-gray-900">3. Pilot Program</td>
+                            <td class="p-4 align-top text-gray-700">2 Weeks</td>
+                            <td class="p-4 align-top text-gray-700">
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Roll out the new workflow to one specific team (e.g., Billing or Technical Support).</li>
+                                    <li>Closely monitor the new dashboard and gather direct feedback from the pilot agents.</li>
+                                    <li>Refine email copy and automation rules based on feedback.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 align-top font-medium text-gray-900">4. Full Rollout</td>
+                            <td class="p-4 align-top text-gray-700">1 Week</td>
+                            <td class="p-4 align-top text-gray-700">
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Train all remaining CS teams on the new workflow.</li>
+                                    <li>Update all QA scorecards to include this new process.</li>
+                                    <li>Go live across all of Customer Service.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Required Resources Section -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+                Required Resources
+            </h2>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+                <ul class="space-y-5">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-3 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                        </svg>
+                        <span>
+                            <strong>1x Helpdesk Administrator</strong> (e.g., Zendesk/Freshdesk Admin) for ~15 hours of configuration and testing.
+                        </span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-3 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-4.682-2.72-4.682 2.72a9.094 9.094 0 013.741-.479m0 0a9.094 9.094 0 00-3.741.479m4.682-2.72a3 3 0 01-4.682 2.72m6.3-3.083A3 3 0 0115.13 16.512v-.004A3 3 0 0110.5 19.5v-.004A3 3 0 015.869 16.51v.004A3 3 0 011.181 13.43m16.638 0A3 3 0 0115.13 10.34v-.004A3 3 0 0110.5 7.34v-.004A3 3 0 015.869 10.34v.004A3 3 0 011.181 13.43m16.638 0l-4.682-2.72" />
+                        </svg>
+
+                        <span>
+                            <strong>1x Project Lead / CS Manager</strong> to oversee the project, write the email copy, and manage training.
+                        </span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-600 mr-3 shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="font-bold text-green-700">
+                            NO engineering resources, data scientists, or AI developers are required.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Initialize Mermaid.js -->
+    <!-- <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'neutral', // 'neutral', 'forest', or 'default'
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true
+            }
+        });
+    </script> --> <!-- Removed Mermaid Init -->
+
+</body>
+</html>
+
